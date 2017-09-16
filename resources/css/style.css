@@ -1,0 +1,28 @@
+html {
+    font-family: Helvetica;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+
+}
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.container {
+    display: flex;
+}
+.urban {
+    max-width: 60%;
+}
+.urban video {
+    max-width: 100%;
+}
