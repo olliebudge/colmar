@@ -2,27 +2,140 @@ html {
     font-family: Helvetica;
     font-size: 16px;
 }
-
 h1 {
     font-size: 3em;
     font-weight: bold;
+    line-height: 120%;
 }
-
 h2 {
     font-size: 2em;
     font-weight: bold;
-
+    padding-top: 36px;
+    padding-bottom: 24px;
+    line-height: 120%;
 }
 h3 {
     font-size: 1.5em;
     font-weight: bold;
+    padding-bottom: 8px;
+    line-height: 120%;
+}
+p {
+    line-height: 150%;
+}
+div {
+    border: 1px solid black;
 }
 .container {
     display: flex;
+    align-items: center;
+}
+.banner {
+    padding: 16px 24px;
+    justify-content: space-between;
+}
+.banner img {
+    height: 32px;
+}
+.banner span {
+    font-weight: bold;
+}
+.banner nav ul {
+    margin-left: 16px;
+}
+.banner-img{
+    width: 60%;
+    margin: 32px 24px;
+}
+.splash img {
+    width: 100%;
+}
+.banner-text {
+    width: 40%;
+}
+.banner-text h1,h3{
+    padding: 8px 0px;
+    
+}
+.button {
+    background-color: grey;
+    align-content: center;
+    display: block;
+    width: 100%;
+    border: none;
+    color: white;
+    padding: 8px 0px;
+    text-align: center;
+    display: inline-block;
+}
+.information {
+    display: flex;
+    align-items: flex-start;
+}
+.main-title {
+    width: 60%;
+    margin: 32px 24px;
+}
+.main-title img {
+    width: 100%;
+}
+.main-info {
+    width: 40%;
+    margin-top: 16px;
+}
+.main-info img {
+    width: 35%;
+    padding: 16px;
+}
+.quote {
+    padding-top: 36px;
+}
+.course-container {
+    display: flex;
+    align-items: flex-start;
+}
+.course-container img {
+    flex-grow: 1;
+}
+.exhibit-info {
+    display: flex;
+    align-items: flex-start;
 }
 .urban {
     max-width: 60%;
+    margin: 0px 24px 36px 24px;
 }
 .urban video {
     max-width: 100%;
 }
+.urban-info {
+    width: 40%;
+}
+.urban-info img {
+    width: 35%;
+    padding: 16px;
+}
+.courses {
+    margin: 32px;
+}
+.courses h2 {
+    width: 100%;
+    text-align: center;
+}
+.course {
+    margin: 16px;
+    flex-grow: 1;
+    width:33%;
+}
+.course-text {
+    margin: 8px 16px;
+}
+.course img {
+    width: 100%;
+}
+.exhibit h2 {
+    width:100%;
+        text-align: center;
+    }
+}
+
