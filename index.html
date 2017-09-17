@@ -1,5 +1,6 @@
 <!DOCTYPE html>
     <head>
+        <link href="https://fonts.googleapis.com/css?family=Cabin:400,700|Ubuntu:400,700" rel="stylesheet">
         <link rel="stylesheet" href="./resources/css/reset.css">
         <link rel="stylesheet" href="./resources/css/style.css">
         <title>Colmar Academy</title>
@@ -7,10 +8,13 @@
     <header>
         <div class = "banner container">
             <div class = "container">
-                <a><img src="./resources/images/ic-logo.svg"></a>
-                <p><span>COLMAR</span>ACADEMY</p>
+                <img src = "./resources/images/ic-logo.svg">
+                <img id = "mobile" src="./resources/images/ic-on-campus.svg">
+                <img id = "mobile"src="./resources/images/ic-online.svg">
+                <img id = "mobile" src="./resources/images/ic-login.svg">
+                <p id ="dt"><span>COLMAR</span>ACADEMY</p>
             </div>
-            <nav class="container">
+            <nav id = "dt" class="container">
                 <ul>On campus</ul>
                 <ul>Online</ul>
                 <ul>For companies</ul>
@@ -48,24 +52,27 @@
                 </div>
                 <div class ="main-info">
                     <div class = "container" id ="orientation">
-                        <img src="./resources/images/information-orientation.jpg">
-                        <div>
+                        <img id = "dt" src = "./resources/images/information-orientation.jpg">
+                        <img id = "mobile" src = "./resources/images/information-orientation-mobile.jpg">
+                        <div class = "info">
                             <h3>Orientation date</h3>
                             <p>Tues 10/11 &amp Wed 10/12: 8am-3pm</p>
                             <p class ="read">Read more</p>
                         </div>
                     </div>
                     <div class = "container" id ="campus">
-                        <img src ="./resources/images/information-campus.jpg">
-                        <div>
+                        <img id = "dt" src ="./resources/images/information-campus.jpg">
+                        <img id = "mobile" src ="./resources/images/information-campus-mobile.jpg">
+                        <div class = "info">
                             <h3>Our campus</h3>
                             <p>Find which campus is close by you</p>
                             <p class ="read">Read more</p>
                         </div>
                     </div>
                     <div class = "container" id ="guest-lecture">
-                        <img src ="./resources/images/information-guest-lecture.jpg">
-                        <div>
+                        <img id = "dt" src ="./resources/images/information-guest-lecture.jpg">
+                        <img id = "mobile" src ="./resources/images/information-guest-lecture-mobile.jpg">
+                        <div class = "info">
                             <h3>Our guest lecture</h3>
                             <p>Join a keynote with Oliver Sack about music in medical treatment</p>
                             <p class ="read">Read more</p>
@@ -77,7 +84,7 @@
                 <h2>Start learning</h2>
                 <div class = "course-container">
                     <div class = "course" id = "software">
-                        <img src="./resources/images/course-software.jpg">
+                        <img id = "dt" src="./resources/images/course-software.jpg">
                         <div class = "course-text">
                             <h3>Software engineering</h3>
                             <p>COURSES</p>
@@ -85,7 +92,7 @@
                         </div>
                     </div>
                     <div class = "course" id = "computer-art">
-                        <img src ="./resources/images/course-computer-art.jpg">
+                        <img id = "dt" src ="./resources/images/course-computer-art.jpg">
                         <div class = "course-text">
                             <h3>Computer art</h3>
                             <p>COURSES</p>
@@ -94,7 +101,7 @@
                         </div>
                     </div>
                     <div class = "course" id = "design">
-                        <img src="./resources/images/course-design.jpg">
+                        <img id = "dt" src="./resources/images/course-design.jpg">
                         <div class = "course-text">
                             <h3>Design</h3>
                             <p>COURSES</p>
@@ -104,7 +111,7 @@
                 </div>
                 <div class="course-container">
                     <div class = "course" id ="data">
-                        <img src ="./resources/images/course-data.jpg">
+                        <img id = "dt" src ="./resources/images/course-data.jpg">
                         <div class = "course-text">
                             <h3>Data</h3>
                             <p>COURSES</p>
@@ -112,7 +119,7 @@
                         </div>
                     </div>
                     <div class = "course" id= "business">
-                        <img src ="./resources/images/course-business.jpg">
+                        <img id = "dt" src ="./resources/images/course-business.jpg">
                         <div class = "course-text">
                             <h3>Business</h3>
                             <p>COURSES</p>
@@ -120,7 +127,7 @@
                         </div>
                     </div>
                     <div class = "course" id = "marketing">
-                        <img src ="./resources/images/course-marketing.jpg">
+                        <img id = "dt" src ="./resources/images/course-marketing.jpg">
                         <div class = "course-text">
                             <h3>Marketing</h3>
                             <p>COURSES</p>
@@ -138,8 +145,8 @@
                         <p><video loop autoplay>
                             <source src="./resources/videos/thesis.mp4" 
                             type="video/mp4"></video></p>
-                        <h3>Reimagine urban</h3>
-                        <p>"Curabitur vitae libero in ipsum porttitor consequat.  Alquam et 
+                        <h3 id = "dt">Reimagine urban</h3>
+                        <p id ="dt" >"Curabitur vitae libero in ipsum porttitor consequat.  Alquam et 
                             commodo lectus, nec consequat neque.  Sed non accumsan urna. 
                             Phasellus sed consequat ex.  Etiam eget magna laoreet, efficitur 
                             dolor consequat, tristique ligula."</p>
@@ -165,9 +172,9 @@
         </div>
     </body>
     <footer>
-        <div class = "banner container">
+        <div class = "foot container">
             <p>&copy 2016 Colmat Academy.  All rights reserved</p>
-            <nav class = "container">
+            <nav id ="dt" class = "container">
                 <ul>Terms</ul>
                 <ul>Privacy</ul>
             </nav>

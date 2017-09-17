@@ -1,6 +1,9 @@
 html {
-    font-family: Helvetica;
+    font-family: "Ubuntu", sans-serif;
     font-size: 16px;
+}
+h1, h2, h3 {
+    font-family: "Cabin", sans-serif
 }
 h1 {
     font-size: 3em;
@@ -24,15 +27,28 @@ p {
     line-height: 150%;
 }
 div {
-    border: 1px solid black;
+    
+}
+#mobile {
+    display: none;
 }
 .container {
     display: flex;
     align-items: center;
-}
-.banner {
-    padding: 16px 24px;
     justify-content: space-between;
+}
+header .banner {
+    padding: 16px 0px;
+    justify-content: space-between;
+    background-color: #EBE06B;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+}
+.banner .container {
+    margin:0px 24px;
 }
 .banner img {
     height: 32px;
@@ -52,13 +68,17 @@ div {
 }
 .banner-text {
     width: 40%;
+    margin-right: 0px;
 }
 .banner-text h1,h3{
     padding: 8px 0px;
-    
+}
+.splash {
+    margin-top: 64px;
+    background-color: #729853;
 }
 .button {
-    background-color: grey;
+    background-color: #ff8b7d;
     align-content: center;
     display: block;
     width: 100%;
@@ -67,6 +87,10 @@ div {
     padding: 8px 0px;
     text-align: center;
     display: inline-block;
+    transition: background-color 500ms linear 50ms;
+}
+.button:hover {
+    background-color: red;
 }
 .information {
     display: flex;
@@ -74,7 +98,8 @@ div {
 }
 .main-title {
     width: 60%;
-    margin: 32px 24px;
+    padding: 32px 24px;
+    background-color: #ffc334;
 }
 .main-title img {
     width: 100%;
@@ -89,6 +114,9 @@ div {
 }
 .quote {
     padding-top: 36px;
+}
+#guest-lecture {
+    background-color: #e89a5e;
 }
 .course-container {
     display: flex;
@@ -116,7 +144,8 @@ div {
     padding: 16px;
 }
 .courses {
-    margin: 32px;
+    padding: 32px;
+    background-color: #729853;
 }
 .courses h2 {
     width: 100%;
@@ -126,6 +155,7 @@ div {
     margin: 16px;
     flex-grow: 1;
     width:33%;
+    background-color: white;
 }
 .course-text {
     margin: 8px 16px;
@@ -135,7 +165,110 @@ div {
 }
 .exhibit h2 {
     width:100%;
-        text-align: center;
+    text-align: center;
+}
+.read {
+    color:#729853;
+    transition: color 500ms linear 100ms
+}
+.read:hover {
+    color: red;
+}
+#fisma {
+    background-color: #e89a5e;
+}
+.foot {
+    padding: 16px 24px;
+    background-color: #ebe06b;
+}
+@media only screen and (max-width:890px) {
+    .splash.container {
+        display: block;
+    }
+    .banner-img {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+    .banner-text {
+        width: auto;
+        padding: 16px 0px;
+        margin: 16px;
     }
 }
 
+@media only screen and (max-width:480px) {
+    .container, .information, .course-container{
+        display: block;
+        align-items: center;
+    }
+    .main-title {
+        display: none;
+    }
+    .main-info {
+        width: auto;
+        padding: 16px;
+        margin-top: 0px;
+    }
+    .main-info img {
+        width: 100%;
+        padding: 0px;
+    }
+    .button {
+        margin: 8px 0px;
+    }
+    #dt {
+        display: none;
+    }
+    #mobile {
+        display: inherit;
+    }
+    .main-info .info {
+        padding: 16px;
+    }
+    .main-info .container {
+        margin-bottom: 64px;
+    }
+    #guest-lecture {
+        margin-bottom: 32px;
+    }
+    .courses {
+        margin: 0px 16px 32px 16px;
+        background-color: initial;
+    }
+    h2 {
+        padding-top: 32px;
+    }
+    .course {
+        width: auto;
+        margin: 0px 0px 8px 0px;
+        background-color: #729853;
+        
+    }
+    .course-text p {
+        display: none;
+    }
+    .course-text h3 {
+        padding: 0px;
+    }
+    .course-text {
+        margin: 16px 16px 24px 16px;
+    }
+    .exhibit h2 {
+        padding-bottom: 16px;
+    }
+    .exhibit {
+        margin-bottom: 24px;
+    }
+    .urban-info {
+        display: none;
+    }
+    .urban {
+        max-width: 100%;
+        margin: 0px;
+    }
+    .banner .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
